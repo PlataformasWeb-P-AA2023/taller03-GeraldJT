@@ -1,0 +1,14 @@
+div.uno{
+	background-color: whites;
+	border: 0.2rem solid yellow;
+	outline: 0.5rem solid  #9c9cfc;
+	font: bold 1.5rem message-box ;
+	margin: 10px;
+}
+div.dos{
+	background-color: #cc8c44;
+	color: white;
+}
+div.dos p{
+	border-bottom: 0.2rem solid green;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</head>
+<body>
+	<form id="forms">
+	<p>Nombre:</p>
+	<input type="text" id="Nombre">
+	<p>Apellido:</p>
+	<input type="text" id="Apellido">
+	<p>Fecha de nacimiento:</p>
+	<input type="text" id="datepicker">
+	<p id="mensaje"></p>
+	<button type="submit">Generar Mensaje</button>
+	</form>
+	<script>
+    $(document).ready(function() {
+      $( "button" ).click(function() {
+        var texto1 = $('#Nombre');
+        var texto2 = $('#Apellido').text();
+      
+        console.log(texto1);
+      });
+    });
+  </script>
+</body>
+</html>
